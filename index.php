@@ -8,7 +8,8 @@
 <body>
 <h2>Bling Bling Nagelstudio Chantal</h2>
 
-<form id="myForm">
+<form id="myForm" action="../controllers/AfspraakController.php?action=opslaanAfspraak" method="POST">
+
     <p> Kies 4 basis kleuren voor uw nagels: </p>
     <div>
         <input type="color" id="roze" name="roze" value="#FFC0CB"/>
@@ -20,8 +21,7 @@
     <br>
     <p>Uw telefoonnummer:</p>
     <input type="tel" id="phone" name="phone" 
-    placeholder="+31 6 1234 56 78"
-    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+    placeholder="+31 6 1234 56 78" required />
 
     <br>
     <br>
@@ -32,7 +32,7 @@
     <br> 
 
     <p>Afspraak datum:</p>
-    <input type="datetime-local" name="" id="">
+    <input type="datetime-local" name="date" id="date">
 
     <br>
     <br>
@@ -43,6 +43,8 @@
     <label for="optie2">Luxe manicure (massage en handpakking) $30</label><br>
     <input type="checkbox" id="optie3" name="optie3" value="Boat">
     <label for="optie3">Nagelreparatie per nagel (in eerste week gratis) $5,00</label><br>
+
+    <button type="submit">Opslaan</button>
 
     <button type="reset">Reset</button>
 
