@@ -8,7 +8,8 @@
 <body>
 <h2>Bling Bling Nagelstudio Chantal</h2>
 
-<form id="myForm" action="../controllers/AfspraakController.php?action=opslaanAfspraak" method="POST">
+<form id="myForm" action="AfspraakController.php?action=opslaanAfspraak" method="POST">
+
 
     <p> Kies 4 basis kleuren voor uw nagels: </p>
     <div>
